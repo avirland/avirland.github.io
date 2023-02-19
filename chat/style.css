@@ -112,6 +112,7 @@ html, body {
 #chat-wrapper #letter-overlay .overlay-letter {
   color: #d2d2d2;
   font-weight: 300;
+  font-size: 2em;
   position: absolute;
   transition: all 1.5s, opacity 0.5s;
   transition-timing-function: ease-in-out;
