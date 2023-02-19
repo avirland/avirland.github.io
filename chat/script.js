@@ -85,7 +85,7 @@ const createLetter = (cName, val) => {
 
 const getAlphabet = isUpperCase => {
   let letters = [];
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 0; i <= 3; i++) {
     const i = Math.floor(Math.random() * 116);
     if (i < 26) { // English alphabet (A-Z)
     val = String.fromCharCode(65 + i);
