@@ -97,6 +97,7 @@ html, body {
   color: #d2d2d2;
   display: inline-block;
   font-weight: 300;
+  font-size: 2em;
   position: absolute;
 }
 #chat-wrapper #letter-overlay {
