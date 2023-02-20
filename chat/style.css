@@ -25,10 +25,6 @@ html, body {
   overflow: hidden;
   width: 100%;
 }
-#chat-message-column-wrapper {
-  height: 100%;
-  overflow: auto;
-}
 #chat-wrapper #chat-bot-mood {
   left: 0px;
   padding: 40px;
@@ -199,7 +195,19 @@ html, body {
   transition: all 0.5s;
   width: 100px;
 }
-#chat-wrapper #chat-message-window #chat-message-column-wrapper {
+#chat-message-column-wrapper {
+  bottom: 0px;
+  height: 100%;
+  left: 0px;
+  overflow: auto;
+  position: absolute;
+  width: calc(100% - 80px);
+  z-index: 1;
+  min-height: 140px;
+  margin-bottom: 140px;
+  padding: 40px 40px 0px 40px;
+}
+#chat-wrapper #chat-message-window {
   bottom: 0px;
   height: 100%;
   left: 0px;
@@ -208,7 +216,7 @@ html, body {
   width: 100%;
   z-index: 1;
 }
-#chat-wrapper #chat-message-window #chat-message-column-wrapper #chat-message-column {
+#chat-wrapper #chat-message-window #chat-message-column {
   bottom: 0px;
   left: 0px;
   min-height: 140px;
