@@ -216,7 +216,16 @@ html, body {
   width: 100%;
   z-index: 1;
 }
-#chat-wrapper #chat-message-window #chat-message-column {
+#chat-message-column {
+  bottom: 0px;
+  left: 0px;
+  min-height: 140px;
+  margin-bottom: 140px;
+  overflow: auto;
+  padding: 40px 40px 0px 40px;
+  width: calc(100% - 80px);
+}
+#chat-wrapper #chat-message-window {
   bottom: 0px;
   left: 0px;
   min-height: 140px;
