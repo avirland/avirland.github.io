@@ -441,9 +441,8 @@ const sendUserMessage = () => {
     .then((data) => {
       MsgSendBot = data.choices[0].text;
       sendAllowBot = 'yes';
-    })
+    });
     .catch((error) => console.error(error));
-  });
   STATE.isUserSendingMessage = true;
   addChatMessage(text, false);
   setTimeout(() => {
