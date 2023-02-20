@@ -7,6 +7,19 @@ MESSAGE_INPUT = getEl('message-input'),
 MESSAGE_INPUT_FIELD = getEl('message-input-field'),
 CHAT_BOT_MOOD = getEl('chat-bot-mood'),
 CHAT_BOT_MOOD_VALUE = getEl('chat-bot-mood-value');
+
+// получаем элементы
+var messageColumn = document.getElementById("chat-message-column");
+var messageColumnWrapper = document.getElementById("chat-message-column-wrapper");
+// устанавливаем высоту элемента chat-message-column в зависимости от его содержимого
+function setChatMessageColumnHeight() {
+  var height = messageColumn.offsetHeight;
+  messageColumnWrapper.style.maxHeight = height + "px";
+}
+// вызываем функцию после загрузки страницы и при изменении размеров окна
+window.onload = setChatMessageColumnHeight;
+window.onresize = setChatMessageColumnHeight;
+
 if (typeof MsgSendBot === "undefined") {
   var MsgSendBot = "Привет!";
 }
