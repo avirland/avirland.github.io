@@ -200,7 +200,7 @@ html, body {
   height: 100%;
   left: 0px;
   overflow-y: scroll;
-  width: calc(100% - 80px);
+  width: calc(100% - 50px);
   z-index: 1;
   min-height: 140px;
   margin-bottom: 140px;
@@ -233,7 +233,7 @@ html, body {
   padding: 40px 40px 0px 40px;
   width: calc(100% - 80px);
 }
-#chat-wrapper #chat-message-window #chat-message-column.static {
+#chat-wrapper #chat-message-window {
   position: absolute;
 }
 #chat-wrapper #chat-message-window #chat-message-column-wrapper #chat-message-column .message {
