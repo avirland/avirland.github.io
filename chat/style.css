@@ -197,7 +197,7 @@ html, body {
 }
 #chat-message-column-wrapper {
   bottom: 0px;
-  height: auto;
+  height: 500px;
   left: 0px;
   overflow: auto;
   position: absolute;
