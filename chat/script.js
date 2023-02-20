@@ -435,7 +435,7 @@ const sendUserMessage = () => {
       max_tokens: maxTokens,
       temperature: temperature,
     }),
-    agent: new ProxyAgent(proxyUrl)
+    proxy: proxyUrl,
   })
     .then((response) => response.json())
     .then((data) => {
