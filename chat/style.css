@@ -199,8 +199,7 @@ html, body {
   bottom: 0px;
   height: 500px;
   left: 0px;
-  overflow: auto;
-  position: absolute;
+  overflow-y: scroll;
   width: calc(100% - 80px);
   z-index: 1;
   min-height: 140px;
