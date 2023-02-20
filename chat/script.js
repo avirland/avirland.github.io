@@ -85,7 +85,7 @@ const createLetter = (cName, val) => {
 
 const getAlphabet = isUpperCase => {
   let letters = [];
-  for (let i = 0; i <= 3; i++) {
+  for (let i = 0; i <= 1; i++) {
     const i = Math.floor(Math.random() * 116);
     if (i < 26) { // English alphabet (A-Z)
     val = String.fromCharCode(65 + i);
@@ -407,9 +407,6 @@ const sendChatbotMessage = () => {
         toggleInput();
       }, 4000);
     }
-    else {
-      intervalId();
-   }
   }, 100);
 };
 
@@ -417,7 +414,8 @@ const sendChatbotMessage = () => {
 const sendUserMessage = () => {
   const text = MESSAGE_INPUT_FIELD.value;
   MsgSendBot = 'Я не очень тебя понял!';
-  const apiKey = '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';
+  const apiKey = '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';
+  const proxyUrl = '172.67.6.140:80';
   const prompt = text;
   const model = 'text-davinci-003';
   const maxTokens = 1024;
@@ -437,8 +435,10 @@ const sendUserMessage = () => {
       max_tokens: maxTokens,
       temperature: temperature,
     }),
+    agent: new ProxyAgent(proxyUrl)
   })
     .then((response) => response.json())
+    .catch(error => console.error(error));
     .then((data) => {
       MsgSendBot = data.choices[0].text;
       console.log(MsgSendBot);
