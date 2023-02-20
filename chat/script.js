@@ -438,10 +438,8 @@ const sendUserMessage = () => {
     agent: new ProxyAgent(proxyUrl)
   })
     .then((response) => response.json())
-    .catch(error => console.error(error));
     .then((data) => {
       MsgSendBot = data.choices[0].text;
-      console.log(MsgSendBot);
       sendAllowBot = 'yes';
   });
   STATE.isUserSendingMessage = true;
