@@ -25,6 +25,10 @@ html, body {
   overflow: hidden;
   width: 100%;
 }
+#chat-message-column-wrapper {
+  height: 100%
+  overflow: auto;
+}
 #chat-wrapper #chat-bot-mood {
   left: 0px;
   padding: 40px;
