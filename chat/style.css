@@ -56,7 +56,7 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
   display: inline-block;
   height: 60px;
-  margin-left: 60px;
+  margin-left: 0px;
   vertical-align: top;
   width: 60px;
 }
@@ -142,7 +142,7 @@ html, body {
 #chat-wrapper #chat-message-window #message-input-wrapper #message-input {
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 0%;
   transform: translateX(-50%) translateY(-50%);
   background-color: white;
   border-radius: 200px;
@@ -222,7 +222,7 @@ html, body {
   margin-bottom: 140px;
   overflow: hidden;
   padding: 40px 40px 0px 40px;
-  width: calc(100% - 80px);
+  width: calc(100% - 20px);
 }
 #chat-wrapper #chat-message-window {
   bottom: 0px;
@@ -263,7 +263,7 @@ html, body {
 #chat-wrapper #chat-message-window #chat-message-column-wrapper #chat-message-column .message.received .content {
   animation: bounceInLeft 1s ease-in-out;
   animation-delay: 0.5s;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 #chat-wrapper #chat-message-window #chat-message-column-wrapper #chat-message-column .message.sent {
   text-align: right;
@@ -277,7 +277,7 @@ html, body {
 #chat-wrapper #chat-message-window #chat-message-column-wrapper #chat-message-column .message.sent .content {
   animation: bounceInRight 1s ease-in-out;
   animation-delay: 0.5s;
-  margin-right: 40px;
+  margin-right: 10px;
 }
 #chat-wrapper #chat-message-window #chat-message-column-wrapper #chat-message-column .message .profile-icon {
   animation: bounceIn 1s ease-in-out;
@@ -303,8 +303,8 @@ html, body {
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px, rgba(0, 0, 0, 0.12) 0px 2px 8px;
   display: inline-block;
-  max-width: 200px;
-  padding: 30px 40px;
+  max-width: 500px;
+  padding: 20px 30px;
   position: relative;
   text-align: left;
   transition: all 0.5s;
