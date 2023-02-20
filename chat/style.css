@@ -206,9 +206,6 @@ html, body {
   margin-bottom: 140px;
   padding: 40px 40px 0px 40px;
 }
-#chat-message-column-wrapper::-webkit-scrollbar {
-  height: 90%;
-}
 #chat-wrapper #chat-message-window {
   bottom: 0px;
   height: 100%;
