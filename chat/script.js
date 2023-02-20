@@ -414,7 +414,7 @@ const sendChatbotMessage = () => {
 const sendUserMessage = () => {
   const text = MESSAGE_INPUT_FIELD.value;
   MsgSendBot = 'Я не очень тебя понял!';
-  const apiKey = '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';
+  const apiKey = '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';
   const proxyUrl = '172.67.6.140:80';
   const prompt = text;
   const model = 'text-davinci-003';
@@ -441,6 +441,8 @@ const sendUserMessage = () => {
     .then((data) => {
       MsgSendBot = data.choices[0].text;
       sendAllowBot = 'yes';
+    })
+    .catch((error) => console.error(error));
   });
   STATE.isUserSendingMessage = true;
   addChatMessage(text, false);
